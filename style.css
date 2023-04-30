@@ -1,9 +1,38 @@
+body{
+    background-color: #202123;
+}
+
 .content-principal {
     display: flex;
-    margin: 5%;
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 2%;
+    background-color: #6e2cf0;
+    color: white;    
+    width: 60%;
+    height: 90vh; /* Altura fija */
+    margin-top: 3%;
+    margin-left: 20%;
+    border-radius: 5px;
 }
-#valorVehiculo{
-    width: 30%;
-    
+
+.content-principal .content-result {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: #444653;    
+    color: white;
+    border: 1px solid #333333;
+    width: 100%; /* Ancho fijo */
+    height: 100%; /* Altura fija */
+    overflow-y: scroll; /* Desplazamiento vertical */
+}
+
+.content-principal .content-result label {
+    word-wrap: break-word; /* Ajuste automático del texto a varias líneas */
+}
+
+.content-principal .col-auto{
+    display: inline-flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
 }

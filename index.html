@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,23 +8,31 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="content-principal">      
-      <form class="row g-4">          
-          <input type="text" id="valorVehiculo" placeholder="Ingrese un vehiculo" onchange="valorInput(this.value)">
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-3" id="boton">Confirmar</button>
-        </div>
-        <h4>resultados</h4>
+    <div class="content-principal">
+      <h4>PROGRAMA CALCULO DE PEAJES POR TIPO VEHICULO</h4>      
+      <div class="col-auto">
+        <select class="form-select"  aria-label=".form-select-sm example" id="valorVehiculo">
+          <option selected>Abrir este menú de selección</option>
+          <option value="automóvil">Automóvil</option>
+          <option value="camión">Camión</option>
+          <option value="mula">Mula</option>
+        </select>
+        <!-- <input type="text" id="valorVehiculo" placeholder="Ingrese un vehiculo" onchange="valorInput(this.value)"> -->        
+        <button type="submit" class="btn btn-outline-light" id="boton">Confirmar</button>
+      </div>
+      <div class="content-result">
+        <h4>Resultados</h4>
         <label id="texto_1"></label>
-        <h4>resultados totales por vehiculo</h4>
+        <h4>Totales por vehiculo</h4>
         <label id="peaje_ta"></label>
         <label id="peaje_tc"></label>
         <label id="peaje_tm"></label>
-        <h4>resultados des peajes por vehiculo</h4>
+        <label id="peajes_tt"></label>
+        <h4>Peajes por vehiculo</h4>
         <label id="peaje_a"></label>
         <label id="peaje_c"></label>
-        <label id="peaje_m"></label>
-      </form>
+        <label type="number" id="peaje_m"></label>  
+      </div>    
     </div>
 
     <script src="index.js"></script>
